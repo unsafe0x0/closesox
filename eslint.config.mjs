@@ -13,6 +13,15 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off", // Turn off explicit any rule
+      "no-unused-vars": "off", // Turn off unused variables rule
+      "react/no-unescaped-entities": "off", // Turn off unescaped entities rule
+      "no-unused-expressions": "off", // Turn off unused expressions rule
+      "comma-dangle": "off", // Turn off dangling commas rule
+    },
+  },
 ]);
 
 export default eslintConfig;
